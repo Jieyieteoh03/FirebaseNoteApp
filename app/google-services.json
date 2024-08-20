@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1015714502515",
+    "project_id": "fir-noteapp-613b2",
+    "storage_bucket": "fir-noteapp-613b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015714502515:android:913d0e10f5bd85b12b9706",
+        "android_client_info": {
+          "package_name": "com.jy.firebaseNoteApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5S2clcl4_jPt_GLTZ8WYEiF8jWyR4P7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginRegisterFragment">
+
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.jy.firebaseNoteApp.ui.loginRegister.LoginRegisterFragment"
+        android:label="LoginRegisterFragment" >
+        <action
+            android:id="@+id/actionLoginRegistertoHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginRegisterFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jy.firebaseNoteApp.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/actionHomeToAddNote"
+            app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/actionHomeToEditNote"
+            app:destination="@id/editNoteFragment" />
+        <action
+            android:id="@+id/actionHomeToLoginRegister"
+            app:destination="@id/loginRegisterFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.jy.firebaseNoteApp.ui.addEdit.add.AddNoteFragment"
+        android:label="AddNoteFragment" />
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.jy.firebaseNoteApp.ui.addEdit.edit.EditNoteFragment"
+        android:label="EditNoteFragment" >
+        <argument android:name="noteId" app:argType="string" />
+    </fragment>
+</navigation>
